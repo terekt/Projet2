@@ -1,0 +1,125 @@
+/* Blocs */
+
+body {
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+header {
+
+}
+
+.rating {
+font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f005";
+}
+
+.void {
+    color: #F2F2F2;
+}
+
+nav {
+    background-color: blue;
+    position: sticky;
+    top: 0px;
+}
+
+#accommodation {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+#popular {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+#chart .fas{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f201";
+}
+
+.activity-result {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+/* Element */
+
+p {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Raleway:wght@700', sans-serif;
+    color: black;
+}
+
+h2 {
+    font-family: 'Raleway:wght@700', sans-serif;
+    color: black;
+}
+
+h3 {
+    font-family: 'Raleway:wght@700', sans-serif; 
+    color: black;
+}
+
+nav ul li a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 16px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto; 
+    text-align: right;
+}
+
+.category {
+    font-family: 'Raleway:wght@700', sans-serif; 
+}
+
+/* Modifier */
+
+nav ul li a:hover {
+    color: #0065FC;
+}
+
+nav ul li a:active {
+    color: #0065FC;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 992px) /* Tablet */
+{
+
+}
+
+@media screen and (max-width: 768px) /* Smartphone */
+{
+
+}
