@@ -22,13 +22,6 @@ nav {
     top: 0px;
 }
 
-footer {
-    background-color: #F2F2F2;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-
 #results {
     width: 100%;
     display: flex;
@@ -36,6 +29,18 @@ footer {
     justify-content: space-between;
 }
 
+#activity {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
 
 /* Element */
 
@@ -43,30 +48,36 @@ p {
     font-family: 'Raleway', sans-serif;
     color: black;
     margin: 0px;
+    margin-block: 0px;
 }
 
 a {
     color: black;
     text-decoration: none;
     margin: 0px;
+    margin-block: 0px;
 }
 
 h1 {
     font-family: 'Raleway:wght@700', sans-serif;
+    font-size: 25px;
     color: black;
     margin: 0px;
+    margin-block: 0px;
 }
 
 h2 {
     font-family: 'Raleway:wght@700', sans-serif;
     color: black;
     margin: 0px;
+    margin-block: 0px;
 }
 
 h3 {
     font-family: 'Raleway:wght@700', sans-serif;
     color: black;
     margin: 0px;
+    margin-block: 0px;
 }
 
 img {
@@ -77,23 +88,33 @@ img {
     width: 100px;
     margin-left: 15px;
     margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header p {
+    margin-top: 5px;
 }
 
 #search {
-    height: 30px;
+    margin-top: 15px;
+    height: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
 #gps-icon {
-    width: 30px;
+    width: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.fa-map-marker-alt {
-    width: 10px;
-text-align: center;
+.fas .fa-map-marker-alt {
+    color: black;
 }
 
 .rating {
@@ -126,14 +147,82 @@ nav ul {
     flex-wrap: nowrap;
 }
 
-.filter {
+#filter {
     margin-top: 20px;
     display: flex;
     flex-wrap: nowrap;
 }
 
 .filter-option {
+    height: 40px;
     margin-left: 40px;
+    display: flex;
+    border: 2px #F2F2F2 solid;
+    border-radius: 30px;
+}
+
+.filter-option p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.filter-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background-color: #DEEBFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filter p {
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fas {
+    color: #0065FC;
+}
+
+.fa-star {
+    color: #0065FC;
+    font-style: normal;
+}
+
+.void{
+    color: #F2F2F2;
+}
+
+#info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#info-bubble {
+    width: 20px;
+    height: 20px;
+    border: 2px #F2F2F2 solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-info {
+    font-size: 10px;
+}
+
+#info p {
+    margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .category {
@@ -144,6 +233,7 @@ nav ul {
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 66%;
+    height: 450px;
     padding: 20px;
     margin-right: 2%;
 }
@@ -158,7 +248,7 @@ nav ul {
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 33%;
-    height: 100%;
+    height: 450px;
     padding: 20px;
 }
 
@@ -217,55 +307,86 @@ figcaption {
     height: 100%;
 }
 
-#activity {
-    width: 100%;
-}
-
 #activity-list {
     height: 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .activity-result {
     height: 100%;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.082);
 }
 
 .activity-result img {
     width: 100%;
-    height: auto;
+    height: 85%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    vertical-align: middle;
 }
 
 #irregular-disposition1 {
+    width: 400px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 #irregular1 {
-    height: 33%;
+    height: 58%;
+    width: 100%;
 }
 
-#irregular-disposition1 img {
-    height: 100%;
+#irregular1 img {
+    height: 200px;
 }
 
 #irregular2 {
-    height: 50%;
+    height: 38%;
+    width: 100%;
+}
+
+#irregular2 img {
+    height: 120px;
 }
 
 #irregular-disposition2 {
+    width: 400px;
     height: 100%;   
     display: flex; 
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 #irregular3 {
-    height: 33%;
+    height: 45%;
+    width: 100%;
 }
 
-#irregular-disposition2 img {
-    height: 100%;
+#irregular3 img {
+    height: 140px;
+}
+
+#irregular4 {
+    height: 55%;
+    width: 100%;
+}
+
+#irregular4 img {
+    height: 180px;
+}
+
+#activity-result figcaption{
+    height: 15%;
 }
 
 /* Modifier */
