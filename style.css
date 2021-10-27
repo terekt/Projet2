@@ -1,142 +1,47 @@
-/* Blocs */
+/* Common parameters */
 
-body {
-    margin: 0%;
+* {
+    padding: 0;
+    margin: 0;
 }
-
-#container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-}
-
-.void {
-    color: #F2F2F2;
-}
-
-nav {
-    background-color: blue;
-    position: sticky;
-    top: 0px;
-}
-
-#results {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-#activity {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-footer {
-    background-color: #F2F2F2;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-
-/* Element */
 
 p {
     font-family: 'Raleway', sans-serif;
-    color: black;
-    margin: 0px;
-    margin-block: 0px;
+    color: rgb(66, 66, 66);
+    font-size: 14px;
+    text-decoration: none;
 }
 
 a {
     color: black;
-    text-decoration: none;
-    margin: 0px;
-    margin-block: 0px;
-}
-
-h1 {
-    font-family: 'Raleway:wght@700', sans-serif;
-    font-size: 25px;
-    color: black;
-    margin: 0px;
-    margin-block: 0px;
-}
-
-h2 {
-    font-family: 'Raleway:wght@700', sans-serif;
-    color: black;
-    margin: 0px;
-    margin-block: 0px;
-}
-
-h3 {
-    font-family: 'Raleway:wght@700', sans-serif;
-    color: black;
-    margin: 0px;
-    margin-block: 0px;
 }
 
 img {
     object-fit: cover;
 }
 
-#logo {
-    width: 100px;
-    margin-left: 15px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-header p {
-    margin-top: 5px;
-}
-
-#search {
-    margin-top: 15px;
-    height: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-#gps-icon {
-    width: 40px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-color: #F2F2F2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.fas .fa-map-marker-alt {
+h1, h2, h3 {
+    font-family: 'Raleway:wght@700', sans-serif;
     color: black;
 }
 
-#search input {
-    box-sizing: border-box;
-    border-top: 2px #F2F2F2 solid;
-    border-bottom: 2px #F2F2F2 solid;
-    border-left: 0px;
-    border-right: 0px;
+.star-on, .filter-icon {
+    color: #0065FC;
 }
 
-#pc-button {
-    background-color: #0065FC;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+/* Center content */
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1366px;
 }
 
-.rating {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f005";
+/* Menu */
+
+nav {
+    position: sticky;
+    top: 0px;
 }
 
 nav ul li a {
@@ -154,9 +59,74 @@ nav ul {
     text-align: right;
 }
 
+nav ul li a:hover {
+    color: #0065FC;
+}
+
+nav ul li a:active {
+    color: #0065FC;
+}
+
+/* Header */
+
+#logo {
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+/* Search Bar */
+
+#search {
+    margin-top: 15px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#search input {
+    box-sizing: border-box;
+    border-top: 2px #F2F2F2 solid;
+    border-bottom: 2px #F2F2F2 solid;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#gps-icon {
+    width: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pc-button {
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 #mobile-button {
     display: none;
 }
+
+/* Filters list */
 
 #filter-category {
     display: flex;
@@ -200,18 +170,7 @@ nav ul {
     margin-bottom: auto;
 }
 
-.fas {
-    color: #0065FC;
-}
-
-.fa-star {
-    color: #0065FC;
-    font-style: normal;
-}
-
-.void{
-    color: #F2F2F2;
-}
+/* Info under filters */
 
 #info {
     margin-top: 20px;
@@ -229,9 +188,6 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.fa-info {
     font-size: 10px;
 }
 
@@ -241,11 +197,18 @@ nav ul {
     margin-bottom: auto;
 }
 
-.category {
-    font-family: 'Raleway:wght@700', sans-serif;
+/* Section for the results of the search */
+
+#results {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-#accommodation {
+/* Accomodation results for Marseille */
+
+#accomodation {
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 66%;
@@ -259,6 +222,25 @@ nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.accomodation-result {
+    background-color: white;
+    width: 33%;
+    height: 200px;
+}
+
+.accomodation-result img {
+    width: 100%;
+    height: 60%;
+}
+
+/* Rating stars */
+
+.star-off {
+    color: #F2F2F2;
+}
+
+/* Popular panel */
 
 #popular {
     background-color: #F2F2F2;
@@ -282,31 +264,6 @@ nav ul {
     justify-content: space-between;
 }
 
-figure {
-    margin: 0px;
-}
-
-figcaption {
-    font-size: 80%;
-}
-
-#chart .fas {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f201";
-}
-
-.accommodation-result {
-    background-color: white;
-    width: 33%;
-    height: 200px;
-}
-
-.accommodation-result img {
-    width: 100%;
-    height: 60%;
-}
-
 .popular-result {
     background-color: white;
     display: flex;
@@ -321,6 +278,18 @@ figcaption {
 .popular-result img {
     width: 30%;
     height: 100%;
+}
+
+#popular-icon {
+    font-weight: 124px;
+}
+
+/* List of Activity for the search */
+
+#activity {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #activity-list {
@@ -346,6 +315,12 @@ figcaption {
     border-top-right-radius: 10px;
     vertical-align: middle;
 }
+
+#activity-result figcaption{
+    height: 15%;
+}
+
+/* irregular disposition of the results */
 
 #irregular-disposition1 {
     width: 400px;
@@ -401,8 +376,13 @@ figcaption {
     height: 180px;
 }
 
-#activity-result figcaption{
-    height: 15%;
+/* Footer with redirections to other content of the website */
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 .direction {
@@ -418,17 +398,6 @@ figcaption {
 .direction p {
     margin-top: 5px;
 }
-
-/* Modifier */
-
-nav ul li a:hover {
-    color: #0065FC;
-}
-
-nav ul li a:active {
-    color: #0065FC;
-}
-
 
 /* Media queries */
 
