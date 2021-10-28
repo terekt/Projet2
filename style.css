@@ -532,32 +532,16 @@ footer {
     height: 200px;
 }
 
-.activity-result figcaption {
-    height: 50%;
+.activity-result img {
+    height: 150px;
 }
 
 #irregular-disposition1 {
     max-width: 100%;
 }
 
-#irregular-disposition1 .activity-result {
-    height: 200px;
-}
-
 #irregular-disposition2 {
     max-width: 100%;
-}
-
-#irregular-disposition2 .activity-result {
-    height: 200px;
-}
-
-#irregular1 img {
-    height: 100%;
-}
-
-#irregular4 img {
-    height: 100%;
 }
 
 /* footer  */
