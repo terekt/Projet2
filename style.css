@@ -402,27 +402,27 @@ header p {
 #irregular-disposition1 {
     width: 100%;
     max-width: 315px;
-    height: 100%;
+    max-height: 400px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 #irregular1 {
-    height: 58%;
+    height: 55%;
     width: 100%;
 }
 
 #irregular2 {
-    height: 38%;
+    height: 40%;
     width: 100%;
 }
 
 #irregular-disposition2 {
     width: 100%;
     max-width: 315px;
-    height: 100%;   
+    max-height: 400px;
     display: flex; 
     flex-direction: column;
     flex-wrap: nowrap;
@@ -435,7 +435,7 @@ header p {
 }
 
 #irregular4 {
-    height: 55%;
+    height: 50%;
     width: 100%;
 }
 
@@ -540,7 +540,6 @@ footer {
 
 #irregular-disposition1 {
     max-width: 100%;
-    flex-wrap: wrap;
 }
 
 #irregular-disposition1 .activity-result {
@@ -549,7 +548,6 @@ footer {
 
 #irregular-disposition2 {
     max-width: 100%;
-    flex-wrap: wrap;
 }
 
 #irregular-disposition2 .activity-result {
