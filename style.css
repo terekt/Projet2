@@ -190,6 +190,10 @@ nav ul li a:active {
     border-radius: 30px;
 }
 
+.filter-option:hover {
+    border: 2px #DEEBFF solid;
+}
+
 #filter-category .filter-option p {
     margin: auto 15px auto 10px;
 }
