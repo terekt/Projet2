@@ -464,12 +464,12 @@ footer {
 
 /* Media queries */
 
-@media screen and (max-width: 992px)
+@media all and (max-width: 992px)
 /* Tablet */
 
 {}
 
-@media only screen and (max-width: 768px)
+@media all and (max-width: 768px)
 /* Smartphone */
 
 {
