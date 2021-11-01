@@ -39,6 +39,7 @@ h3 {
 #container {
     margin: 0 auto 0 auto;
     max-width: 993px;
+    position: relative;
 }
 
 
@@ -66,7 +67,7 @@ header p {
 /* Menu */
 
 nav {
-    position: fixed;
+    position: absolute;
     height: 110px;
     top: 0;
     right: 0;
@@ -75,13 +76,13 @@ nav {
 nav ul {
     list-style: none;
     text-decoration: none;
-    text-align: right;
+    text-align: center;
     display: flex;
     justify-content: flex-end;
 }
 
 nav ul li{
-    padding: 0 20px 20px 20px;
+    width: 100px;
 }
 
 nav ul li a:hover {
@@ -89,11 +90,6 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-    color: #0065FC;
-    background-color: #0065FC;
-}
-
-nav ul li a:visited {
     color: #0065FC;
 }
 
@@ -509,10 +505,45 @@ footer {
 
 {
 
+/* No padding for logo and nav */
+
+header {
+    padding: 0;
+}
+
+#header-mobile-container {
+    padding: 0 30px 0 30px;
+}
+
 /* center logo  */
 
 #logo {
     align-items: center;
+}
+
+#logo img {
+    margin-bottom: 10px;
+}
+
+/* resize and position of menu */
+
+nav {
+    position: relative;
+    height: 100px;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+#menu-option1, #menu-option2 {
+    height: 3px;
+    top: 60px;
+    position: relative;
+}
+
+#menu-option2 {
+    background-color: #F2F2F2;
 }
 
 /* hide pc version of the button  */
