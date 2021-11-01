@@ -29,12 +29,12 @@
             <p>En plein centre ville ou en pleine nature</p>
             <form id="search" action="processing.php" method="POST">
                 <div id="gps-icon">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt icon-select"></i>
                 </div>
                 <input type="search" placeholder="Marseille, France" id="search-placeholder" />
                 <button type="submit" id="pc-button">Rechercher</button>
                 <button type="submit" id="mobile-button">
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search icon-select"></i>
                 </button>
             </form>
             <div id="filter">
@@ -42,26 +42,26 @@
                     <p>Filtres</p>
                     <div class="filter-option">
                         <div class="filter-icon">
-                            <i class="fas fa-money-bill-wave"></i>
+                            <i class="fas fa-money-bill-wave icon-select"></i>
                         </div>
                         <p>Economique</p>
                     </div>
                     <div class="filter-option">
                         <div class="filter-icon">
-                            <i class="fas fa-male"></i>
+                            <i class="fas fa-male icon-select"></i>
                         </div>
                         <p>Familial</p>
 
                     </div>
                     <div class="filter-option">
                         <div class="filter-icon">
-                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart icon-select"></i>
                         </div>
                         <p>Romantique</p>
                     </div>
                     <div class="filter-option">
                         <div class="filter-icon">
-                            <i class="fas fa-dog"></i>
+                            <i class="fas fa-dog icon-select"></i>
                         </div>
                         <p>Animaux autorisés</p>
                     </div>
@@ -220,55 +220,59 @@
                     </div>
                 </aside>
             </section>
-            <section id="activity">
-                <h2>Activités à Marseille</h2>
-                <div id="activity-list">
-                    <div class="activity-result">
-                        <figure class="activity-regular">
-                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="place10">
-                            <figcaption>
-                                <h3>Vieux Port</h3>
-                            </figcaption>
-                        </figure>
+            <section id="activity-container">
+                <article id="activity">
+                    <h2>Activités à Marseille</h2>
+                    <div id="activity-list">
+                        <div class="activity-result">
+                            <figure class="activity-regular">
+                                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                    alt="place10">
+                                <figcaption>
+                                    <h3>Vieux Port</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="activity-result">
+                            <figure id="irregular1">
+                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="place11">
+                                <figcaption>
+                                    <h3>Fort de Pomègues</h3>
+                                </figcaption>
+                            </figure>
+                            <figure id="irregular2">
+                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="place12">
+                                <figcaption>
+                                    <h3>Îles du Frioul</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="activity-result">
+                            <figure class="activity-regular">
+                                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                    alt="place13">
+                                <figcaption>
+                                    <h3>Parc National des Calanques</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="activity-result">
+                            <figure id="irregular3">
+                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                    alt="place14">
+                                <figcaption>
+                                    <h3>Notre-Dame-de-la-Garde</h3>
+                                </figcaption>
+                            </figure>
+                            <figure id="irregular4">
+                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="place15">
+                                <figcaption>
+                                    <h3>Parc Longchamp</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
-                    <div class="activity-result">
-                        <figure id="irregular1">
-                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="place11">
-                            <figcaption>
-                                <h3>Fort de Pomègues</h3>
-                            </figcaption>
-                        </figure>
-                        <figure id="irregular2">
-                            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="place12">
-                            <figcaption>
-                                <h3>Îles du Frioul</h3>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="activity-result">
-                        <figure class="activity-regular">
-                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                                alt="place13">
-                            <figcaption>
-                                <h3>Parc National des Calanques</h3>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="activity-result">
-                        <figure id="irregular3">
-                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="place14">
-                            <figcaption>
-                                <h3>Notre-Dame-de-la-Garde</h3>
-                            </figcaption>
-                        </figure>
-                        <figure id="irregular4">
-                            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="place15">
-                            <figcaption>
-                                <h3>Parc Longchamp</h3>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
+                </article>
             </section>
         </main>
         <footer>
