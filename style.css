@@ -331,6 +331,7 @@ main {
     height: 100%;
     max-width: 260px;
     padding: 30px 20px 17px 20px;
+    margin-bottom: 30px;
 }
 
 #popular-title {
@@ -410,6 +411,7 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .activity-regular, #irregular1, #irregular2, #irregular3, #irregular4 {
@@ -500,10 +502,72 @@ footer {
 
 /* Media queries */
 
-@media all and (max-width: 992px)
+@media all and (min-width: 769px) and (max-width: 992px)
 /* Tablet */
 
-{}
+{
+
+/* Popular before Accomodation */
+
+#results {
+    flex-wrap: wrap-reverse;
+    padding: 0;
+}
+
+/* popular take full screen width */
+
+#popular {
+    max-width: 100%;
+}
+
+/* 3 popular results per row */
+
+.popular-result {
+    max-width: 31%;
+    height: 150px;
+    flex-direction: column;
+}
+
+/* popular results with correct size, border and space */
+
+.popular-result img {
+    width: 100%;
+    height: 66%;
+    border-radius: 18px 18px 0 0;
+}
+
+.popular-result figcaption {
+    padding: 8px 0 0 3px;
+}
+
+.popular-result figcaption p {
+    margin-bottom: 0;
+}
+
+/* accomodation take full screen width */
+
+#accomodation {
+    max-width: 100%;
+}
+
+/* 3 accomodation results per row */
+
+.accomodation-result {
+    max-width: 31%;
+}
+
+.accomodation-result figcaption {
+    padding-left: 3px;
+    justify-content: normal;
+}
+
+/* even distribution of activity results on 2 rows */
+
+.activity-result {
+    max-width: 48%;
+}
+
+}
 
 @media all and (max-width: 768px)
 /* Smartphone */
@@ -579,6 +643,8 @@ nav a::before {
 #search-placeholder {
     flex-grow: 1;
 }
+
+/* Popular before Accomodation */
 
 #results {
     flex-wrap: wrap-reverse;
