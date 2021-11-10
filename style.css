@@ -1,4 +1,4 @@
-/* Common parameters */
+/* Common parameters - factorisation */
 
 * {
     padding: 0;
@@ -33,7 +33,7 @@ h3 {
     color: #0065FC;
 }
 
- nav, nav a::before {
+nav, nav a::before {
     position: absolute;
 }
 
@@ -121,6 +121,19 @@ nav ul, p, a, #pc-button {
     display: none;
 }
 
+.accomodation-result, .popular-result, .activity-regular, #irregular1, #irregular2, #irregular3, #irregular4 {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.082), -1px 0px 3px rgba(0, 0, 0, 0.082);
+}
+
+.activity-regular, #irregular1, #irregular2, #irregular3, #irregular4 {
+    border-radius: 10px;
+}
+
+.activity-regular img, #irregular1 img, #irregular2 img, #irregular3 img, #irregular4 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 /* Center content */
 
 #container {
@@ -206,7 +219,6 @@ nav a::before {
 
 /* Filters list */
 
-
 #filter {
     margin-top: 20px;
 }
@@ -287,7 +299,6 @@ main {
     margin-bottom: 30px;
     padding: 3px;
     border-radius: 20px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.082), -1px 0px 3px rgba(0, 0, 0, 0.082);
 }
 
 .accomodation-result img {
@@ -328,7 +339,6 @@ main {
     margin-bottom: 15px;
     padding: 3px;
     border-radius: 20px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.082), -1px 0px 3px rgba(0, 0, 0, 0.082);
 }
 
 .popular-result figcaption {
@@ -362,16 +372,6 @@ main {
     max-width: 215px;
     height: 400px;
     margin-bottom: 20px;
-}
-
-.activity-regular, #irregular1, #irregular2, #irregular3, #irregular4 {
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.082), -1px 0px 3px rgba(0, 0, 0, 0.082);
-}
-
-.activity-regular img, #irregular1 img, #irregular2 img, #irregular3 img, #irregular4 img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .activity-regular img {
@@ -439,8 +439,7 @@ footer {
 /* Media queries */
 
 @media all and (min-width: 769px) and (max-width: 992px) {
-/* Tablet */
-    
+    /* Tablet */
     /* Popular before Accomodation */
     #results {
         flex-wrap: wrap-reverse;
@@ -483,20 +482,18 @@ footer {
 }
 
 @media all and (max-width: 768px) {
-/* Smartphone */
-
-    /* Factorisation max width */
+    /* Smartphone */
+    /* Factorisation */
     .accomodation-result, #accomodation, #popular, .activity-result {
         max-width: 100%;
+    }
+    #logo, #mobile-button {
+        display: flex;
+        justify-content: center;
     }
     /* No padding for logo and nav */
     header {
         padding: 0;
-    }
-    /* center logo  */
-    #logo {
-        display: flex;
-        justify-content: center;
     }
     #logo img {
         width: 150px;
@@ -527,10 +524,8 @@ footer {
     }
     /* show mobile version of the button  */
     #mobile-button {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         background-color: #0065FC;
         border: none;
         border-radius: 10px;
